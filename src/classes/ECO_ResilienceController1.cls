@@ -52,7 +52,7 @@ public with sharing class ECO_ResilienceController1 {
     
         public void init()
         {
-                                
+                // Get all current Atachments before loading the page                
                 attachmentsMap = new Map<Id, Attachment>([select Id, Name, ContentType, LastModifiedDate, LastModifiedById from Attachment where parentId = :oproject.Id]);
                 
         }
